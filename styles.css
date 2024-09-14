@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('weatherjpg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 0, 100% 0, 200% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    max-height: 90vh; /* Ensure the app container fits within the viewport */
+    overflow: hidden; /* Prevent scrolling of the entire app */
+    position: relative; /* Position relative for absolute positioning of the close button */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #18677b;
+}
+
+#weather-info-container {
+    max-height: 60vh; /* Limit height of weather info section */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: left; /* Align text to the left */
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+#current-weather, #forecast {
+    margin-top: 20px;
+}
+
+#current-weather h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-stats {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.weather-stats span {
+    font-size: 24px;
+}
+
+#forecast div {
+    margin-bottom: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#close-forecast {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f44336; /* Red background for close button */
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Keyframe animation to scroll the background horizontally */
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
